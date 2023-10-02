@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.main-container {
+    min-height: 100vh;
+    max-height: fit-content;
+    width: 100vw;
+    background: url('../images/background.jpg');
+    background-size: contain;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.task-container {
+    width: 40vw;
+    min-height: 20vh;
+    background-color: white;
+    border-radius: 2vw;
+    position: absolute;
+    top: 20vh;
+    left: 28vw;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+.task-form{
+    display: flex;
+    justify-content: space-around;
+    margin-top:1em;
+}
+.task-input{
+    height : 5vh;
+    width: 35vw;
+    border-radius: 1.4em;
+    border-width: 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+    font-size: 110%;
+    text-align: center;
+}
+.add-task{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.add-task:hover{
+    zoom: 106%;
+    transition: zoom 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.line{
+    border-bottom: 4px dotted black;
+    margin-top: 1em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(80%);
+}
+.task-list{
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+.task{
+    /* display: flex; */
+    justify-content: space-evenly;
+    /* position: relative; */
+    /* border: 2px solid blue; */
+    border-radius: 0.5em;
+    padding: 0.3em;
+    background-color: antiquewhite;
+    margin-bottom: 0.7em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.task-controls{
+    /* position: absolute; */
+    margin-left: 78%;
+    right: 0.5em;
+}
+.edit , .delete{
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+svg:hover{
+    zoom: 106%;
+    transition: zoom 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.delete{
+    color: red;
+}
+
+
+
+
+/* RESPONSIVE DESIGNS CSS */
+@media (max-width: 950px)
+{
+   .task-container{
+    width: 55vw;
+    left: 22vw;
+   }
+   .task-input{
+    width: 55vw;
+   }
+}
+@media (max-width:690px) {
+    .task-input{
+        width: 72vw;
+       }
+    .task-container{
+        width: 90vw;
+        left: 5vw;
+    }
+}
